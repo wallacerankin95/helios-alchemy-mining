@@ -1,0 +1,23 @@
+.position_card_name_with_balance{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    /* line-height: 0.1!important; */
+    padding: 0 20px 0 20px;
+
+}
+h5 {
+    margin: 12px 0 12px 0;
+}
+
+.position_card_name {
+    align-items: center;
+    display: flex;
+    column-gap: 0.53rem;
+    row-gap: 0.53rem;
+    margin-right: 8px;
+    font-size: 20px;
+}
+.position_card_balance {
+    font-size: 20px;
+}

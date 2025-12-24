@@ -1,0 +1,79 @@
+table.reward_pool_count_table_burnpool {
+    width: 100%;
+    color: #fff;
+    line-height: 1 !important;
+    border-spacing: 0px;
+    margin-bottom: 10px;
+    margin-top: 18px;
+}
+
+/* table,
+td,
+tr {
+    border: 1px solid #fff;
+} */
+
+tr,
+td {
+    padding: 2.5px;
+}
+
+.title_amount_titanx_td {
+    width: 45%;
+    padding-right: 10px;
+    font-size: 19px;
+}
+
+.amount_titanx_td_burnpool {
+    width: 40%;
+    text-align: end;
+    font-size: 19px;
+    color: #f4b940;
+}
+
+.titanx_name_td_burnpool {
+    width: 15%;
+    padding-left: 10px;
+    font-size: 19px;
+    color: #f4b940;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.amount_eth_td {
+    text-align: end;
+    font-size: 19px;
+    color: #f4b940;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.name_eth_td {
+    padding-left: 10px;
+    font-size: 20px;
+    color: #f4b940;
+}
+
+.amount_usd_td {
+    text-align: end;
+    font-size: 16px;
+}
+
+.name_usd_td {
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.tooltip_text_dashboard_burnpool {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tooltip_text_name_dashboard {
+    font-family: 'Montserrat', sans-serif;
+    text-wrap: nowrap;
+    font-weight: bold;
+    margin: 0
+}

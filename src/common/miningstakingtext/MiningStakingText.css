@@ -1,0 +1,10 @@
+h3 {
+    margin: 0;
+}
+
+.stats_position_card_name_with_balance {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0 20px 0 0px;
+}

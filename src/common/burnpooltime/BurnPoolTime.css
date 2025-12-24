@@ -1,0 +1,61 @@
+table.reward_pool_count_table {
+    width: 100%;
+    color: #fff;
+    line-height: 1 !important;
+    border-spacing: 0px;
+    margin-bottom: 10px;
+    margin-top: 18px;
+}
+
+tr,
+td {
+    padding: 2.5px;
+}
+
+.title_amount_titanx_td_burnpool {
+    width: 29%;
+    font-size: 19px;
+    text-wrap: nowrap;
+}
+
+.amount_titanx_td {
+    width: 40%;
+    text-align: end;
+    font-size: 19px;
+    color: #f4b940;
+}
+
+.titanx_name_td {
+    width: 15%;
+    padding-left: 10px;
+    font-size: 19px;
+    color: #f4b940;
+}
+
+.amount_eth_td {
+    text-align: end;
+    font-size: 19px;
+    color: #f4b940;
+}
+
+.name_eth_td {
+    padding-left: 10px;
+    font-size: 20px;
+    color: #f4b940;
+}
+
+.amount_usd_td {
+    text-align: end;
+    font-size: 16px;
+}
+
+.name_usd_td {
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.title_amount_td_burnpool_text {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
