@@ -20,6 +20,7 @@ import {
     WETHTitanPoolAddress, 
     WETHUsdtPoolAddress
 } from "../const/const";
+
 import pool from "../contract/pool.json";
 import BigNumber from "bignumber.js";
 import {setEtherToUsd, setTitanxToUsd, setHlxToUsd}  from "../store/price/index";
