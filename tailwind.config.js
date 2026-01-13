@@ -19,7 +19,7 @@ module.exports = {
         blue: '#5865f2',
       },
       fontFamily: {
-        // You can add custom fonts here
+        // You can add custom fonts here.
         montserrat: ['Montserrat', 'sans-serif'],
         bakbak: ['Bakbak One', 'sans-serif'],
       },
