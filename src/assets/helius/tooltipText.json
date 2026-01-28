@@ -1,0 +1,206 @@
+{
+    "header": "This is the current contract day and time.  See `Helios Daily Update` in docs for more info.  This button will trigger a manual daily update if it needs to be called.  This is a maintenance function, and you will not earn rewards for calling this.",
+    "dashboard": [
+        {
+            "assets": [
+                {
+                    "ethereum": "This is the total amount of ETH in your wallet."
+                },
+                {
+                    "titanx": "This is the total amount of TITANX in your wallet."
+                },
+                {
+                    "Helios": "This is the total amount of HLX in your wallet."
+                }
+            ]
+        },
+        {
+            "rewards": [
+                {
+                    "cyclerewardpool": "This is the total amount of ETH and TITANX currently in all Cycle Reward Pools waiting for payout to HLX stakers."
+                },
+                {
+                    "claimablerewards": "This is the amount of ETH and TITANX available to be claimed now.  Future Cycle Reward Payouts will acumulate on top of this balance, allowing you to wait to claim on your own schedule.  No late fees on claiming this balance."
+                }
+            ]
+        }
+    ],
+    "mine": [
+        {
+            "leftbox": [
+                {
+                    "minerlength": "This is the number of days you want your miner to run, and will not be claimable until that day.  The miner will earn HLX every day it runs, so the longer timeframe the more HLX mined."
+                },
+                {
+                    "minerpower": "This is the power level you want your miner to have, from 1% to 100,000%.  This determines the percent TITANX cost and reward for the miner.  The cost and reward ratio stays the same no matter what setting you choose here.  This option allows you to create a miner exactly the size you want to avoid having to make multiple miners."
+                },
+                {
+                    "burnamplifier": "Burn up to 10% TITANX of the mining cost for up to 10% extra HLX mined.  This is an additional cost on top of the mining cost."
+                }
+            ]
+        },
+        {
+            "rightbox": [
+                {
+                    "EstHLXatEndofMiner": "This is the total estimated HLX received at the end of your miner. This includes all bonuses / amplifiers."
+                },
+                {
+                    "TITANXtoStartMiner": "This is the cost to start the miner with the current settings."
+                },
+                {
+                    "MarketValueofMiner": "This is the total HLX * Current Market Price.  This number will change with time as the HLX price goes up or down on the market. This is NOT a guarantee or expectation of return, just a projected estimation if all stays the same as now. Which it will not. Price can go up or it can go down."
+                },
+                {
+                    "EstROIatEndofMiner": "This is the Cost of Miner vs Total $ Value at miner completion. The ROI displayed here is not a guarantee or a promise of any kind.  This depends on the market price of HLX at miner completion, and is only a estimate at today's price.  The price will be different when your miner is completed.  This does NOT include hRank bonuses."
+                },
+                {
+                    "HLXMarketPrice": "This is the current market price of HLX in TITANX/HLX Uniswap v3 pool."
+                },
+                {
+                    "GlobalhRank": " This is the Helios Rank assigned to your miner.  This will be used to determine the amount of bonus HLX mined at completion.  Every miner started after your miner will contribute to this bonus."
+                },
+                {
+                    "CurrentHLXPerDayofMining": "This is the current amount of HLX that is mineable per day.  The miner will earn approximately this amount each day it runs."
+                },
+                {
+                    "EarlyAdoptionAmplifier": "This is a bonus for the first 69 days to award early adopters.  You get a percent bonus on HLX mined.  This works it's way down from 10% (Day 1) to 0% on day 69 and onward."
+                },
+                {
+                    "BurnBonusAmplifier": "This is the percent bonus of HLX mined for burning TITANX."
+                },
+                {
+                    "HLXProofofBurnBonus": "When you burn HLX to participate in other protocols, it gets recorded in the smart contract. Based on your total HLX token burned, you get an amplifier on the amount of HLX you get per miner, up to 8%. The 8% max is hit when you've burned 80B HLX tokens."
+                },
+                {
+                    "NextDifficultyIncrease": "Every day it costs a little bit more TITANX to mine HLX. This creates scarcity as each day passes. Check the 'Helios Daily Update' in the docs for more info."
+                }
+            ]
+        }
+    ],
+    "stake": [
+        {
+            "leftbox": [
+                {
+                    "StakeAmount": "This is how much HLX you want to stake."
+                },
+                {
+                    "StakeLength": "This is the number of days you want to stake for.  Your HLX will be locked in the smart contract for this length, then will be returned to you at the end of the stake.  Note: There is a bonus for staking a longer duration."
+                },
+                {
+                    "BurnAmplifier": "You can burn up to 10% TITANX of the stake cost for up to 10% extra shares.  This is an additional cost on top of the staking rate.  Example:  1 HLX = 1 TITANX; Stake 100 HLX; Burn 10 TITANX; Receive 10% more shares."
+                }
+            ]
+        },
+        {
+            "rightbox": [
+                {
+                    "HLXinstake": "This is the total amount of HLX staked."
+                },
+                {
+                    "ofshares": "This is the total number of shares you will receive, including all bonuses.  Minimum stake amount is 1 share."
+                },
+                {
+                    "sharerate": "This is the cost per share.  It will always be 420 HLX."
+                },
+                {
+                    "baseshares": "This is the number of shares received without any bonuses."
+                },
+                {
+                    "durationamplifier": "This is a bonus for the longer you stake, the more shares you get. This bonus starts at 0% and goes up to 200% more shares at day 830."
+                },
+                {
+                    "burnamplifier": "This is a bonus for burning TITANX. 0% to 20% more shares for burning 0% to 20% of the stake amount in TITANX (HLX Staked in ETH value vs TITANX Burned in ETH value = % bonus).  This is an additional cost on top of the stake amount."
+                },
+                {
+                    "effectivesharerate": "This is your share rate including all bonuses.  This is what will be used to calculate total shares received from your stake amount."
+                },
+                {
+                    "effectiveshares": "This is the total amount of shares received, including all bonuses."
+                },
+                {
+                    "titanburned": " This is the amount of TITANX burned for the Burn Amplifier Bonus"
+                }
+            ]
+        }
+    ],
+    "rewardpools": [
+        {
+            "leftbox": [
+                {
+                    "GlobalPayout": "This is the total ETH and TITANX currently in this cycle payout pool.  It will pay out the entire balance to stakers of HLX on payout day."
+                },
+                {
+                    "yourestpayout": "This is your estimated payout when this cycle ends.  This will change based on the amount of assets in the pool & your % of total shares.  The actual amount paid out will be calculated at the time of payout.  You can get more by staking more HLX prior to payout."
+                },
+                {
+                    "progressbar": "This is the countdown until this payout cycle triggers & pays out all assets to stakers.  Once the pool has paid out, a new cycle starts. The payout cycles will run FOREVER."
+                }
+            ]
+        },
+        {
+            "rightbox": [
+                {
+                    "liquidtitanx": "This is the total amount of TITANX in the Treasury waiting to be staked.  Bigger pays more on TitanX, so we let it pool up for more shares received per stake."
+                },
+                {
+                    "titanxstaked": "This is the total amount of TITANX in the Treasury that is max staked on the TitanX protocol."
+                },
+                {
+                    "TotalClaimed": "This is the total amount of ETH claimed to date."
+                },
+                {
+                    "claimablerewards": "This is the amount of ETH rewards the Treasury has available to claim.  When claimed, the ETH is distributed to Buy/Burn HLX Pool, Cycle Reward Pool, and the Investment Pool."
+                },
+                {
+                    "balance": "This is the total amount of ETH available to be invested into V2 Treasuries.  When and how is determined by DAO.  Head to our governance page to participate."
+                },
+                {
+                    "titanxburnpoolbalance": "This is the total amount of ETH available for buying TITANX and burning.  This will buy TITANX on market from the WETH/TITANX pool and forever burn it out of existence.  This provides on-market buy pressure pushing up the price & removes the bought supply off the market forever by burning it."
+                },
+                {
+                    "capperswap": "This is the amount of ETH that is used per swap.  This is determined by the DAO."
+                },
+                {
+                    "callableevery": "This is the frequency of the buy and burn, determined by the DAO.  The smart contract must wait this amount of time before able to be called again."
+                }
+            ]
+        }
+    ],
+    "stats": [
+        {
+            "supply": [
+                {
+                    "liquid": "This is the total number of Liquid HLX in existence.  This excludes Genesis which will never hit open market or stake."
+                },
+                {
+                    "staked": "This is the total number of HLX locked in staking."
+                },
+                {
+                    "userburned": "This is the total number of HLX burned from Proof of Burn by other decentralised protocols."
+                },
+                {
+                    "Buyburned": "This is the total number of HLX burned by the HLX Buy & Burn Contract."
+                },
+                {
+                    "LPfeesburned": "This is the total number of HLX burned by the fees collected from the Uniswap v3 liquidity position locked in the buy & burn smart contract."
+                },
+                {
+                    "panelty": "This is the total number of HLX burned from penalties of late miner and stake claims."
+                }
+            ]
+        },
+        {
+            "miningandstaking": [
+                {
+                    "GlobalMiners": "This is the total number of virtual miners that have been started globally."
+                },
+                {
+                    "GlobalMiningPower": "This is the total power level of all virtual miners that have been started globally."
+                },
+                {
+                    "GlobalActiveShares": "This is the total number of shares created by all users staking HLX for the payout cycles."
+                }
+            ]
+        }
+    ]
+}

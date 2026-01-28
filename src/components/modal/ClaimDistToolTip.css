@@ -1,0 +1,161 @@
+.claimdisttooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.maxstaketooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.buyburntooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.buyburntooltip .buyburntooltip_content {
+    visibility: hidden;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-top: -220px;
+    margin-left: -250px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 20vw;
+    height: auto;
+    padding: 15px 2rem 15px 2rem;
+    border-radius: 20px;
+    background: radial-gradient(circle, #bb5400, #5b1b03);
+    border: 2px solid rgb(254, 156, 1);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.maxstaketooltip .maxstaketooltip_content {
+    visibility: hidden;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-top: -330px;
+    margin-left: -320px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 20vw;
+    height: auto;
+    padding: 15px 2rem 15px 2rem;
+    border-radius: 20px;
+    background: radial-gradient(circle, #bb5400, #5b1b03);
+    border: 2px solid rgb(254, 156, 1);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.claimdisttooltip .claimdisttooltip_content {
+    visibility: hidden;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-top: -260px;
+    margin-left: -320px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 20vw;
+    height: auto;
+    padding: 10px 2rem 10px 2rem;
+    border-radius: 20px;
+    background: radial-gradient(circle, #bb5400, #5b1b03);
+    border: 2px solid rgb(254, 156, 1);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal_header {
+    position: relative;
+    text-align: center;
+}
+
+.modal_header>.header_top,
+.header_bottom {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modal_content {
+    display: flex;
+    text-align: center;
+    margin: 18px 0 0 0;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 0px;
+}
+
+.content_container {
+    width: 100%;
+}
+
+.token_counter {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.token_counter_name {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+img.iconimg {
+    margin-top: 8px;
+    margin-right: 5px;
+    width: 24px;
+}
+
+.dollar_counter {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.counter_box:nth-child(1) {
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.48);
+}
+
+.counter_box:nth-child(2) {
+    margin-top: 8px;
+}
+
+.claimdisttooltip:hover .claimdisttooltip_content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.maxstaketooltip:hover .maxstaketooltip_content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.buyburntooltip:hover .buyburntooltip_content {
+    visibility: visible;
+    opacity: 1;
+}

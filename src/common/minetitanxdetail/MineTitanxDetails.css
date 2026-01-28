@@ -1,0 +1,22 @@
+.mine_titanx_container {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0 20px 0 20px;
+}
+
+.mine_titanx_name > span {
+    margin: 12px 0 12px 0;
+}
+
+.mine_titanx_name {
+    align-items: center;
+    display: flex;
+    column-gap: 0.53rem;
+    row-gap: 0.53rem;
+    margin-right: 8px;
+    font-size: 16px;
+}
+.mine_titanx_balance {
+    font-size: 16px;
+}

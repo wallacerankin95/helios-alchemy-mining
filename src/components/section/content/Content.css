@@ -1,0 +1,424 @@
+.full {
+    /* background: rgb(215, 129, 66);
+    background: linear-gradient(15deg, rgba(215, 129, 66, 1) 3%, rgba(230, 124, 31, 1) 12%, rgba(92, 35, 7, 1) 42%);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    min-height: 100%;
+    overflow-y: auto;
+}
+
+.wrapper {
+
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0 15px 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ether_subtitle {
+    display: flex;
+}
+
+h2.first_title_helius {
+    margin-top: 0;
+    text-wrap: nowrap;
+    font-family: 'Cinzel', sans-serif;
+    font-size: 32px;
+    color: white;
+}
+
+h2.second_title_helius {
+    margin-top: 0;
+    /* text-wrap: nowrap; */
+    font-family: 'Cinzel', sans-serif;
+    font-size: 32px;
+    color: white;
+}
+
+.ether_subtitle>span {
+    width: 45px;
+}
+
+.ether_subtitle>span>img {
+    width: 35px;
+    margin: 6px 5px 0px 5px;
+}
+
+.dashboard_container {
+    width: 100%;
+    display: block;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    width: 99%;
+    margin-bottom: 15px;
+}
+
+.col {
+    position: relative;
+    width: 50%;
+    /* height: 100%; */
+    /* flex: 1; */
+    justify-content: center;
+    align-items: center;
+}
+
+.assets_cards {
+    width: 100%;
+    max-width: 100%;
+    height: 90%;
+    margin-right: 12px;
+    border-radius: 20px;
+    border: 1pt solid #fff;
+    background-color: #2b0200;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    padding-bottom: 15px;
+}
+
+.rewards_cards {
+    width: 100%;
+    height: 90%;
+    margin-left: 12px;
+    border-radius: 20px;
+    border: 1pt solid #fff;
+    background-color: #2b0200;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-bottom: 15px;
+}
+
+.title_with_tooltip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rewards_cards>a {
+    text-decoration: none !important;
+}
+
+.miners_cards {
+    width: 100%;
+    height: 90%;
+    margin-right: 12px;
+    border: 1pt solid #fff;
+    border-radius: 20px;
+    background-color: #2b0200;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding-bottom: 40px;
+}
+
+.miners_cards>a {
+    text-decoration: none !important;
+}
+
+.green_font_color {
+    color: #2ff712;
+}
+
+.staked_cards {
+    width: 100%;
+    height: 90%;
+    margin-left: 12px;
+    border-radius: 20px;
+    border: 1pt solid #fff;
+    background-color: #2b0200;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-bottom: 40px;
+}
+
+.staked_cards>a {
+    text-decoration: none !important;
+}
+
+.title_h1_cards {
+    margin-left: 5%;
+    font-family: 'Cinzel', sans-serif;
+    font-weight: bold;
+    color: #f4b940;
+    text-transform: none;
+    font-size: 30px;
+}
+
+.cards_content {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+
+}
+
+.cards_content_text {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.text_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.token_value {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn_group {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 4px;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Cinzel', sans-serif;
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+}
+
+.btn_group>button:hover {
+    box-shadow: 0 0 40px 0 rgba(255, 0, 0, 0.5);
+
+}
+
+
+
+.buy_hlx {
+    width: 50%;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid #FE9C01;
+    background-color: #ba3505;
+    font-weight: bold;
+    color: #fff;
+    font-size: 19px;
+}
+
+.claim {
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid #FE9C01;
+    background-color: #ba3505;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    font-size: 19px;
+
+}
+
+.table_text {
+    width: 80%;
+    margin-left: 10%;
+}
+
+table.cards_content_table {
+    width: 100%;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 19px;
+    border-collapse: collapse;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ether_subtitle>h2 {
+    color: white;
+}
+
+table.cards_content_table>tr {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+table.cards_content_table td,
+table.cards_content_table th {
+    padding: 10px;
+    text-align: center;
+}
+
+.active_td {
+    color: #F4B940;
+}
+
+.active_text {
+    width: 100%;
+}
+
+.claimable_td {
+    color: orange;
+}
+
+.ended_td {
+    color: red;
+}
+
+.dashboard_tr {
+    padding-bottom: 16px;
+}
+
+.tooltip_text_dashboard,
+.amount_titanx_td {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.amount_usd_td {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 837px) {
+    .assets_cards>.cards_content>.btn_group {
+        margin-top: 47px;
+    }
+}
+
+@media (max-width: 747px) {
+    .assets_cards>.cards_content>.btn_group {
+        margin-top: 74px;
+    }
+
+    .table_text {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 681px) {
+    .miners_cards>.table_text {
+        width: 90%;
+        margin-left: 1%;
+    }
+}
+
+@media (max-width: 665px) {
+    .assets_cards>.cards_content>.btn_group {
+        margin-top: 103px;
+    }
+}
+
+@media (max-width: 662px) {
+    .assets_cards>.cards_content>.btn_group {
+        margin-top: 133px;
+    }
+}
+
+@media (max-width: 930px) {
+    .title_h1_cards {
+        margin-left: 12%;
+    }
+
+    .wrapper {
+        padding: 0 12px 0 12px;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .col {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+
+    }
+
+    .assets_cards>.cards_content>.btn_group {
+        margin-top: 20px;
+    }
+
+    .assets_cards {
+        margin-right: 0;
+    }
+
+    .rewards_cards {
+        margin-left: 0;
+    }
+
+    .staked_cards {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 930px) {
+    table.cards_content_table {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 535px) {
+    .ether_subtitle {
+        display: block;
+    }
+
+    .ether_subtitle>span>img {
+        display: none;
+    }
+}
+
+@media (max-width: 432px) {
+    table.cards_content_table {
+        font-size: 9px;
+    }
+}
+
+
+.btn_group>.iekbcc0.ju367va.ju367v1n {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &._12cbo8i3:hover {
+        transform: scale(1) !important;
+    }
+
+    button {
+        width: 100%;
+        height: 45px;
+        border-radius: 30px;
+        border: 1px solid #FE9C01;
+        background-color: #ba3505;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: 'Cinzel', sans-serif;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        &:hover {
+            box-shadow: 0 0 40px 0 rgba(255, 0, 0, 0.5);
+        }
+    }
+
+    .ju367v9x {
+        background: transparent;
+        border-color: transparent;
+    }
+}

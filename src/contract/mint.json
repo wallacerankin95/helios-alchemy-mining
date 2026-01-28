@@ -1,0 +1,439 @@
+{
+    "_format": "hh-sol-artifact-1",
+    "contractName": "MintInfo",
+    "sourceName": "contracts/MintInfo.sol",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "Helios_NoMintExists",
+            "type": "error"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "hRank",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "rewardMinted",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "penalty",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "mintPenalty",
+                    "type": "uint256"
+                }
+            ],
+            "name": "MintClaimed",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "hRank",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "gMintpower",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "mintPower",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint16",
+                            "name": "numOfDays",
+                            "type": "uint16"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "mintableHlx",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint48",
+                            "name": "mintStartTs",
+                            "type": "uint48"
+                        },
+                        {
+                            "internalType": "uint48",
+                            "name": "maturityTs",
+                            "type": "uint48"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "mintPowerBonus",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "EAABonus",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "mintedHlx",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "mintCost",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "enum MintStatus",
+                            "name": "status",
+                            "type": "uint8"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct MintInfo.UserMintInfo",
+                    "name": "userMintInfo",
+                    "type": "tuple"
+                }
+            ],
+            "name": "MintStarted",
+            "type": "event"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "mintId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "estimateMintReward",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "estimatedReward",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getGlobalHRank",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getGlobalMintPower",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getTotalActiveMints",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getTotalMintBurn",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getTotalMintClaim",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getTotalMintPenalty",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getTotalMinting",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                }
+            ],
+            "name": "getUserLatestMintId",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                }
+            ],
+            "name": "getUserMintInfo",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "mintPower",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint16",
+                            "name": "numOfDays",
+                            "type": "uint16"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "mintableHlx",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint48",
+                            "name": "mintStartTs",
+                            "type": "uint48"
+                        },
+                        {
+                            "internalType": "uint48",
+                            "name": "maturityTs",
+                            "type": "uint48"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "mintPowerBonus",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "EAABonus",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "mintedHlx",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "mintCost",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "enum MintStatus",
+                            "name": "status",
+                            "type": "uint8"
+                        }
+                    ],
+                    "internalType": "struct MintInfo.UserMintInfo",
+                    "name": "mintInfo",
+                    "type": "tuple"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                }
+            ],
+            "name": "getUserMints",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "mId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "hRank",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "gMintPower",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mintPower",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint16",
+                                    "name": "numOfDays",
+                                    "type": "uint16"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mintableHlx",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint48",
+                                    "name": "mintStartTs",
+                                    "type": "uint48"
+                                },
+                                {
+                                    "internalType": "uint48",
+                                    "name": "maturityTs",
+                                    "type": "uint48"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mintPowerBonus",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "EAABonus",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mintedHlx",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "mintCost",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "enum MintStatus",
+                                    "name": "status",
+                                    "type": "uint8"
+                                }
+                            ],
+                            "internalType": "struct MintInfo.UserMintInfo",
+                            "name": "mintInfo",
+                            "type": "tuple"
+                        }
+                    ],
+                    "internalType": "struct MintInfo.UserMint[]",
+                    "name": "mintInfos",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "bytecode": "0x",
+    "deployedBytecode": "0x",
+    "linkReferences": {},
+    "deployedLinkReferences": {}
+}
